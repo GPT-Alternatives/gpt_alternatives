@@ -48,7 +48,7 @@
 | Qwen                                  | 7B                                                              | Base Model         | 2023-08          | -                                                                                                                                     | 2.2T tokens               |
 | Qwen-Chat                             | 7B                                                              | Qwen               | 2023-08          | -                                                                                                                                     | -                         |
 
-<center> ##  16: ChatGPT Alternatives on Different Applications </center>
+##  16: ChatGPT Alternatives on Different Applications
 | **Software**             | **Backbone**                 | **Url**                                       |
 |--------------------------|------------------------------|-----------------------------------------------|
 | ChatSonic                | GPT-4                        | \url{https://writesonic.com/chat}             |
