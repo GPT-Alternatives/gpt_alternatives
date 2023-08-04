@@ -48,7 +48,7 @@
 | Qwen                                  | 7B                                                              | Base Model         | 2023-08          | -                                                                                                                                     | 2.2T tokens               |
 | Qwen-Chat                             | 7B                                                              | Qwen               | 2023-08          | -                                                                                                                                     | -                         |
 
-##  16: ChatGPT Alternatives on Different Applications
+## ChatGPT Alternatives on Different Applications
 | **Software**             | **Backbone**                 | **Url**                                       |
 |--------------------------|------------------------------|-----------------------------------------------|
 | ChatSonic                | GPT-4                        | \url{https://writesonic.com/chat}             |
@@ -72,3 +72,17 @@
 | Botsonic AI chatbot      | GPT-4                        | \url{https://writesonic.com/botsonic}         |
 | ChatPDF                  | ChatGPT                      | \url{https://www.chatpdf.com/}                |
 
+
+##  Overview of Datasets for Large Language Models
+| Corpora                      | Size       | Latest updated time | Link                                                                |
+|------------------------------|------------|---------------------|---------------------------------------------------------------------|
+| BoolQ                        | 15,492     | 2019                | \url{https://github.com/google-research-datasets/boolean-questions} |
+| Hellaswag                    | ~70k  | 2019                | \url{https://allenai.org/data/hellaswag}                            |
+| WinoGrande                   | ~44k  | 2019                | \url{https://winogrande.allenai.org/}                               |
+| PIQA                         | ~21k  | 2020                | \url{https://yonatanbisk.com/piqa/}                                 |
+| ARC                          | 7,787      | 2018                | \url{https://allenai.org/data/arc}                                  |
+| OpenbookQA                   | 5,957      | 2018                | \url{https://allenai.org/data/open-book-qa}                         |
+| RACE                         | $\sim$100k | 2017                | \url{https://www.cs.cmu.edu/~glai1/data/race/}                      |
+| DROP                         | $\sim$96k  | 2019                | \url{https://allenai.org/data/drop}                                 |
+| GSM8K                        | 8,500      | 2021                | \url{https://github.com/openai/grade-school-math}                   |
+| MMLU\cite{hendryckstest2021} | 15,908     | 2021                | \url{https://github.com/hendrycks/test}      
