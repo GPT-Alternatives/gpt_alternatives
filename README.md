@@ -1,5 +1,6 @@
 # gpt_alternatives
 
+## Statistical overview of open large language models in recent years, categorized by base models
 | **Model**                             | **#Param**                                                      | **Backbone**       | **Release Date** | **Training Data Source**                                                                                                              | **Training Data Size**    |
 |---------------------------------------|-----------------------------------------------------------------|--------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | T5  (enc-dec)                         | 60M, 220M, 770M, 3B, 11B                                        | Base Model         | 2019-10          | C4                                                                                                                                    | 1T tokens                 |
@@ -46,4 +47,28 @@
 | data and vendor-based annotation data | 27,540 instruction tuning data, 2,919,326 human preference data |                    |                  |                                                                                                                                       |                           |
 | Qwen                                  | 7B                                                              | Base Model         | 2023-08          | -                                                                                                                                     | 2.2T tokens               |
 | Qwen-Chat                             | 7B                                                              | Qwen               | 2023-08          | -                                                                                                                                     | -                         |
+
+<center> ##  16: ChatGPT Alternatives on Different Applications </center>
+| **Software**             | **Backbone**                 | **Url**                                       |
+|--------------------------|------------------------------|-----------------------------------------------|
+| ChatSonic                | GPT-4                        | \url{https://writesonic.com/chat}             |
+| Jasper Chat              | GPT 3.5 and others           | \url{https://www.jasper.ai/chat}              |
+| ChatSonic on Opera       | GPT-4                        | \url{https://writesonic.com/chatsonic-opera}  |
+| NeevaAI                  | ChatGPT                      | \url{https://neeva.com/}                      |
+| Copilot                  | Codex                        | \url{https://github.com/features/copilot}     |
+| Tabnine                  | GPT-2                        | \url{https://www.tabnine.com/}                |
+| Codewhisperer            | -                            | \url{https://aws.amazon.com/cn/codewhisperer} |
+| Elsa                     | -                            | \url{https://elsaspeak.com/en}                |
+| DeepL Write              | -                            | \url{https://www.deepl.com/translator}        |
+| Elicit                   | -                            | \url{https://elicit.org}                      |
+| Copilot in Azure Quantum | GPT-4                        | \url{https://quantum.microsoft.com/}          |
+| CoGram                   | -                            | \url{https://www.cogram.com}                  |
+| Otter                    | -                            | \url{https://otter.ai}                        |
+| Chatexcel                | -                            | \url{https://chatexcel.com/}                  |
+| AI Anywhere              | ChatGPT, GPT-4               | \url{https://www.ai-anywhere.com/#/dashboard} |
+| Replika                  | A model with 774M parameters | \url{https://replika.com}                     |
+| Character AI             | GPT-4                        | \url{https://beta.character.ai}               |
+| Poe                      | -                            | \url{https://poe.com}                         |
+| Botsonic AI chatbot      | GPT-4                        | \url{https://writesonic.com/botsonic}         |
+| ChatPDF                  | ChatGPT                      | \url{https://www.chatpdf.com/}                |
 
