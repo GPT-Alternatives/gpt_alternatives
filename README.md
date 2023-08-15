@@ -51,38 +51,38 @@
 ## ChatGPT Alternatives on Different Applications
 | **Software**             | **Backbone**                 | **Url**                                       |
 |--------------------------|------------------------------|-----------------------------------------------|
-| ChatSonic                | GPT-4                        | \url{https://writesonic.com/chat}             |
-| Jasper Chat              | GPT 3.5 and others           | \url{https://www.jasper.ai/chat}              |
-| ChatSonic on Opera       | GPT-4                        | \url{https://writesonic.com/chatsonic-opera}  |
-| NeevaAI                  | ChatGPT                      | \url{https://neeva.com/}                      |
-| Copilot                  | Codex                        | \url{https://github.com/features/copilot}     |
-| Tabnine                  | GPT-2                        | \url{https://www.tabnine.com/}                |
-| Codewhisperer            | -                            | \url{https://aws.amazon.com/cn/codewhisperer} |
-| Elsa                     | -                            | \url{https://elsaspeak.com/en}                |
-| DeepL Write              | -                            | \url{https://www.deepl.com/translator}        |
-| Elicit                   | -                            | \url{https://elicit.org}                      |
-| Copilot in Azure Quantum | GPT-4                        | \url{https://quantum.microsoft.com/}          |
-| CoGram                   | -                            | \url{https://www.cogram.com}                  |
-| Otter                    | -                            | \url{https://otter.ai}                        |
-| Chatexcel                | -                            | \url{https://chatexcel.com/}                  |
-| AI Anywhere              | ChatGPT, GPT-4               | \url{https://www.ai-anywhere.com/#/dashboard} |
-| Replika                  | A model with 774M parameters | \url{https://replika.com}                     |
-| Character AI             | GPT-4                        | \url{https://beta.character.ai}               |
-| Poe                      | -                            | \url{https://poe.com}                         |
-| Botsonic AI chatbot      | GPT-4                        | \url{https://writesonic.com/botsonic}         |
-| ChatPDF                  | ChatGPT                      | \url{https://www.chatpdf.com/}                |
+| ChatSonic                | GPT-4                        | https://writesonic.com/chat             |
+| Jasper Chat              | GPT 3.5 and others           | https://www.jasper.ai/chat              |
+| ChatSonic on Opera       | GPT-4                        | https://writesonic.com/chatsonic-opera  |
+| NeevaAI                  | ChatGPT                      | https://neeva.com/                      |
+| Copilot                  | Codex                        | https://github.com/features/copilot     |
+| Tabnine                  | GPT-2                        | https://www.tabnine.com/                |
+| Codewhisperer            | -                            | https://aws.amazon.com/cn/codewhisperer |
+| Elsa                     | -                            | https://elsaspeak.com/en                |
+| DeepL Write              | -                            | https://www.deepl.com/translator        |
+| Elicit                   | -                            | https://elicit.org                      |
+| Copilot in Azure Quantum | GPT-4                        | https://quantum.microsoft.com/          |
+| CoGram                   | -                            | https://www.cogram.com                  |
+| Otter                    | -                            | https://otter.ai                        |
+| Chatexcel                | -                            | https://chatexcel.com                  |
+| AI Anywhere              | ChatGPT, GPT-4               | https://www.ai-anywhere.com/#/dashboard |
+| Replika                  | A model with 774M parameters | https://replika.com                     |
+| Character AI             | GPT-4                        | https://beta.character.ai               |
+| Poe                      | -                            | https://poe.com                         |
+| Botsonic AI chatbot      | GPT-4                        | https://writesonic.com/botsonic         |
+| ChatPDF                  | ChatGPT                      | https://www.chatpdf.com                |
 
 
 ##  Overview of Datasets for Large Language Models
 | Corpora                      | Size       | Latest updated time | Link                                                                |
 |------------------------------|------------|---------------------|---------------------------------------------------------------------|
-| BoolQ                        | 15,492     | 2019                | \url{https://github.com/google-research-datasets/boolean-questions} |
-| Hellaswag                    | ~70k  | 2019                | \url{https://allenai.org/data/hellaswag}                            |
-| WinoGrande                   | ~44k  | 2019                | \url{https://winogrande.allenai.org/}                               |
-| PIQA                         | ~21k  | 2020                | \url{https://yonatanbisk.com/piqa/}                                 |
-| ARC                          | 7,787      | 2018                | \url{https://allenai.org/data/arc}                                  |
-| OpenbookQA                   | 5,957      | 2018                | \url{https://allenai.org/data/open-book-qa}                         |
-| RACE                         | $\sim$100k | 2017                | \url{https://www.cs.cmu.edu/~glai1/data/race/}                      |
-| DROP                         | $\sim$96k  | 2019                | \url{https://allenai.org/data/drop}                                 |
-| GSM8K                        | 8,500      | 2021                | \url{https://github.com/openai/grade-school-math}                   |
-| MMLU\cite{hendryckstest2021} | 15,908     | 2021                | \url{https://github.com/hendrycks/test}      
+| BoolQ                        | 15,492     | 2019                | https://github.com/google-research-datasets/boolean-questions |
+| Hellaswag                    | ~70k  | 2019                | https://allenai.org/data/hellaswag                            |
+| WinoGrande                   | ~44k  | 2019                | https://winogrande.allenai.org                               |
+| PIQA                         | ~21k  | 2020                | https://yonatanbisk.com/piqa                                 |
+| ARC                          | 7,787      | 2018                | https://allenai.org/data/arc                                  |
+| OpenbookQA                   | 5,957      | 2018                | https://allenai.org/data/open-book-qa                         |
+| RACE                         | $\sim$100k | 2017                | https://www.cs.cmu.edu/~glai1/data/race                      |
+| DROP                         | $\sim$96k  | 2019                | https://allenai.org/data/drop                                 |
+| GSM8K                        | 8,500      | 2021                | https://github.com/openai/grade-school-math                   |
+| MMLU\cite{hendryckstest2021} | 15,908     | 2021                | https://github.com/hendrycks/test      
