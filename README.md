@@ -4,6 +4,9 @@
 The advent of generative pre-trained transformer (GPT) models has brought about a significant transformation in the field of natural language processing (NLP). These models, based on the transformer architecture, demonstrate exceptional capabilities in various NLP tasks. The continuous development of GPT models has led to increasingly larger and more sophisticated versions, with large GPT models like GPT-4 gaining significant attention for their unparalleled performance. However, despite their impressive capabilities, large GPT models have inherent limitations that restrict their widespread adoption, usability, and fine-tuning. The overview of the content is shown is Figure 1.
 ![Figure 1: Overview of out content](image/overview.png)
 
+**Related papers for this section**
+1. Attention is all you need. Neurips 2017. [[paper](https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html)]
+
 ## 2 GPT AND GPT-LIKE MODELS
 
 ![Figure 2: Model Evolution](image/model_evolution.png)
@@ -56,6 +59,44 @@ Table 1. Statistical overview of open large language models in recent years, cat
 | Qwen                                  | 7B                                                              | Base Model         | 2023-08          | -                                                                                                                                     | 2.2T tokens               |
 | Qwen-Chat                             | 7B                                                              | Qwen               | 2023-08          | -                                                                                                                                     | -                         |
 
+**Related papers/links for open LLMs**
+1. Exploring the limits of transfer learning with a unified text-to-text transfor. JMLR 2020. [[paper](https://arxiv.org/abs/1910.10683)]
+2. mT5: A massively multilingual pre-trained text-to-text transformer. NAACL 2021. [[paper](https://aclanthology.org/2021.naacl-main.41/)]
+3. GPT-Neo: Large Scale Autoregressive Language Modeling with Mesh-Tensorflow. [[link](https://zenodo.org/record/5297715)]
+4. Gpt-neox-20b: An open-source autoregressive language model. arxiv 2022. [[paper](https://arxiv.org/abs/2204.06745)]
+5. GPT-J-6B: A 6 Billion Parameter Autoregressive Language Model. [[link](https://github.com/kingoflolz/mesh-transformer-jax)]
+6. Opt: Open pre-trained transformer language models. arxiv 2022. [[paper](https://arxiv.org/abs/2205.01068)]
+7. BLOOM: A 176b-parameter open-access multilingual language model. arxiv 2022. [[paper](https://arxiv.org/abs/2211.05100)]
+8. Glm: General language model pretraining with autoregressive blank infilling. ACL 2022. [[paper](https://arxiv.org/abs/2103.10360)]
+9. GLM-130B: An Open Bilingual Pre-trained Model. ICLR 2023. [[paper](https://openreview.net/forum?id=-Aw0rrrPUF)]
+10. GLM-130B: An Open Bilingual Pre-trained Model. ICLR 2023. [[paper](https://openreview.net/forum?id=-Aw0rrrPUF)]
+11. ChatGLM-6B [[link](https://github.com/THUDM/ChatGLM-6B)]
+12. ChatGLM2-6B [[link](https://github.com/THUDM/ChatGLM2-6B)]
+13. LLaMA: Open and Efficient Foundation Language Models. arxiv 2023. [[paper](https://arxiv.org/abs/2302.13971)]
+14. OpenLLaMA: An Open Reproduction of LLaMA. [[link](https://github.com/openlm-research/open_llama)]
+15. Stanford Alpaca: An Instruction-following LLaMA Model. [[link](https://github.com/tatsu-lab/stanford_alpaca)]
+16. Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality. [[link](https://lmsys.org/blog/2023-03-30-vicuna/)]
+17. StableLM: Stability AI Language Models. [[link](https://github.com/Stability-AI/StableLM)]
+18. Baize. [[link](https://github.com/project-baize/baize-chatbot)]
+19. Koala: A Dialogue Model for Academic Research. [[link](https://bair.berkeley.edu/blog/2023/04/03/koala/)]
+20. WizardLM: Empowering Large Pre-Trained Language Models to Follow Complex Instructions. [[link](https://github.com/nlpxucan/WizardLM)]
+21. Large-scale, Informative, and Diverse Multi-round Dialogue Data, and Models. [[link](https://github.com/thunlp/UltraChat)]
+22. YuLan-Chat: An Open-Source Bilingual Chatbot. [[link](https://github.com/RUC-GSAI/YuLan-Chat)]
+23. Pythia: Interpreting Transformers Across Time and Scale. arxiv 2023. [[paper](https://arxiv.org/abs/2304.01373)]
+24. Dolly. [[link](https://github.com/databrickslabs/dolly)]
+25. OpenChatKit. [[link](https://github.com/togethercomputer/OpenChatKit)]
+26. BELLE: Be Everyone's Large Language model Engine. [[link](https://github.com/LianjiaTech/BELLE)]
+27. RWKV. arxiv 2023. [[link](https://arxiv.org/abs/2305.13048)]
+28. MOSS. [[link](https://github.com/OpenLMLab/MOSS)]
+29. RedPajama-INCITE. [[link](https://together.ai/blog/redpajama-models-v1)]
+30. Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs. [[link](https://www.mosaicml.com/blog/mpt-7b)]
+31. Introducing Falcon LLM. [[link](https://falconllm.tii.ae/)]
+32. InternLM. [[link](https://github.com/InternLM/InternLM)]
+33. Baichuan-7B. [[link](https://github.com/baichuan-inc/Baichuan-7B)]
+34. Llama 2: Open Foundation and Fine-Tuned Chat Models. arxiv 2023. [[link](https://arxiv.org/abs/2307.09288)]
+35. Introducing Qwen-7B: Open foundation and human-aligned models. [[link](https://github.com/QwenLM/Qwen-7B/blob/main/tech_memo.md)]
+36. XVERSE-13B. [[link](https://github.com/xverse-ai/XVERSE-13B)]
+
 ## 3 PRE-TRAINING AND FINE-TUNING DA
 
 ### 3.1 Pre-training Data
@@ -84,6 +125,34 @@ Table 1. Statistical overview of open large language models in recent years, cat
 * **Flan 2021 Dataset**. This dataset is created by transforming existing publicly available text datasets into an instructional format for instruction tuning(https://huggingface.co/datasets/conceptofmind/flan2021_submix_original). It consists of 62 datasets, categorized into twelve task clusters. For each dataset, ten unique templates with natural language instructions are manually composed. The pre-trained language model is instruction-tuned on this mixture of datasets using randomly selected instruction templates. The goal is to improve the model's ability to follow specific guidelines and perform task-oriented behaviors effectively.
 * **Flan Collection**. The Flan Collection compiles various datasets and data augmentation methods for instruction tuning. It includes datasets from **Flan 2021**, **P3** , **Super-Natural Instructions**, and others, formatted into zero-shot, few-shot, and chain-of-thought templates. The dataset is organized into sub-mixtures, each with different variations of prompts, including answer options or not. It contains 1,836 finetuning tasks by combining the mixtures from prior work. Flan Collection serves as a valuable resource for instruction-based fine-tuning and achieves strong performance on evaluation benchmarks with Flan-T5 and Flan-PaLM models.
 
+#### 3.2.3 Alignment Data
+
+**Reinforcement Learning from Human Feedback (RLHF)**. RLHF is a machine learning technique that utilizes human-provided feedback to train models through reinforcement learning. The process involves two key steps: (1) Collecting manually ranked comparison response pairs to build a reward model for evaluating the quality of generated responses. (2) Optimizing the model (policy) using the reinforcement learning framework with rewards obtained from the trained reward model. RLHF enables models to improve their performance based on human feedback, making it a valuable approach for enhancing language generation tasks.
+
+* **InstructGPT**. InstructGPT utilizes reinforcement learning from human feedback (RLHF) to fine-tune GPT-3 based on human preferences. The data is labeled by a team of 40 contractors, collecting demonstrations of desired output behavior on prompts from the OpenAI API, generating approximately 33k samples for RLHF. A reward model (RM) is trained on human-labeled comparisons between model outputs, and the PPO algorithm is employed for fine-tuning, resulting in the aligned InstructGPT.
+
+* **GPT-4 Comparison Data**. The GPT-4 Comparison data consists of ratings provided by GPT-4 for its own responses on a scale from 1 to 10. Additionally, GPT-4 is tasked with comparing and rating responses from three models: GPT-4, GPT-3.5, and OPT-IML \cite{DBLP:journals/corr/abs-2212-12017}. These ratings serve as training data for reward models in the RLHF process.
+
+
+**Supervised Fine-tuning**. Supervised fine-tuning for LLM alignment is also a powerful technique that enables the alignment of language models with specific instructional requirements through targeted data augmentation. By leveraging human-provided feedback and carefully curated datasets, this approach fine-tunes LLMs to better follow instructions and produce contextually relevant responses.
+
+* **LIMA**. LIMA is trained on a dataset of 1,000 prompts and responses, stylistically aligned in the manner of a helpful AI assistant. The data is curated from multiple sources, including community Q&A forums like Stack Exchange, wikiHow, and Pushshift Reddit Dataset, as well as manually authored examples. In comparison to DaVinci003 and Alpaca, LIMA demonstrates superior performance in a human preference study, with only a small gap compared to GPT-4 and Claude. These results reinforce the notion that large language models predominantly acquire their knowledge during pretraining, while limited instruction tuning data suffices to achieve high-quality output. Moreover, the authors examined data quality, quantity, and diversity. Expanding input prompt diversity and enhancing output quality have positive impacts, while increasing data quantity may not yield the same benefits. Comparing various datasets, more diverse prompts led to significantly higher performance. Filtering data for quality improvement also showed positive results. Doubling the training set did not improve response quality.
+
+
+#### 3.2.4 Domain-specific Data
+**Math Domain**. Fine-tuning GPT models with math-related datasets is vital to enhance their capabilities in solving mathematical problems and providing accurate mathematical expressions. Math data aids in developing language models that can effectively comprehend and generate mathematical content, enabling applications in educational settings, scientific research, and various technical fields.
+
+* **Goat-Data**. Goat is a model finetuned for arithmetic tasks on LLaMA. To improve the mathematical capability of language models, such as solving challenging tasks, large-number multiplication and division, Goat splits the tasks into learnable simple tasks, and perform a chain-of-thought learning. Therefore, they create a dataset that contains instruction data with arithmetic expression in random templates. The dataset is released in Github(https://github.com/liutiedong/goat).
+
+* **PRM800K**. The PRM800K Dataset comprises 800K step-level labels, obtained exclusively from a large-scale generator. It includes solutions to 12K problems, totaling 75K solutions. Trained with RLHF on PRM800K, the model in solve 78.2% of problems from a representative subset of the MATH test set.
+
+**Scientific Domain**. For scientific domains such as biology, chemistry, or physics, fine-tuning GPT models with scientific datasets is crucial. This process empowers the models to grasp scientific jargon, comprehend complex concepts, and generate contextually relevant scientific content. Fine-tuned GPT models can assist researchers in automating literature review tasks, suggesting hypotheses, and generating scientific reports with accuracy and domain-specific context. 
+
+* **Filtered S2ORC**. The dataset is used for finetuning PMC-LLaMA. The dataset starts with the S2ORC Datasets, consisting of 81.1M English-language academic papers. After filtering them using PubMed Central (PMC)-id, approximately 4.9M papers remain, focusing on medical knowledge and containing over 75B tokens.
+
+**Code Domain**. In the field of software development, fine-tuning GPT models with code-related datasets holds immense value. By leveraging code-specific data, language models can better understand programming languages, code syntax, and logic, enabling them to assist developers in code completion, bug detection, and code summarization tasks. Fine-tuned GPT models in the code domain contribute to increased developer productivity and improved code quality.
+
+* **CodeExercises**. The CodeExercises dataset, extensively employed in the development of the powerful phi-1 model, constitutes a relatively compact yet valuable collection of Python exercises and solutions, comprising less than 180 million tokens. Each exercise represents a function that necessitates completion, presented in the form of a docstring. The primary focus of this dataset lies in aligning the phi-1 model's capabilities to excel at function completion tasks based on natural language instructions.
 
 ### 4 DEPLOYMENT AND FINETUNING TECHNIQUE
 #### 4.1 Efficient Deploy
@@ -112,7 +181,7 @@ The most common and straightforward way to adapt foundation models to downstream
 a pretrained model to 4-bit and incorporates a limited number of learnable Low-rank Adapter weights. It significantly decreases the average memory needs for fine-tuning a 65-billion-parameter model from over 780GB of GPU memory to less than 48GB, while maintaining the runtime and predictive accuracy comparable to a fully finetuned 16-bit baseline.
 
 
-**Continuous Prompt Tuning and Prefix Tuning**. Continuous prompt tuning prepends or inserts learnable prompts to input sequence and freezes the pre-trained model weights~\cite{lester2021power, liu2021gpt}. It is shown that continuous prompt tuning is comparable to finetuning on simple classification tasks with 10-billion-parameter models. Prefix tuning\cite{li2021prefix} prepends prefixes to Transformer (more specifically, every Transformer layer has trainable continuous prompts rather than merely the input layer) and achieves comparable performance in table-to-text generation tasks compared with full parameter fine-tuning. Further empirical evidence from Ptuning-v2~\cite{liu2021p} demonstrates that prefix tuning achieves comparable performance to finetuning across different scales and tasks.
+**Continuous Prompt Tuning and Prefix Tuning**. Continuous prompt tuning prepends or inserts learnable prompts to input sequence and freezes the pre-trained model weights. It is shown that continuous prompt tuning is comparable to finetuning on simple classification tasks with 10-billion-parameter models. Prefix tuning prepends prefixes to Transformer (more specifically, every Transformer layer has trainable continuous prompts rather than merely the input layer) and achieves comparable performance in table-to-text generation tasks compared with full parameter fine-tuning. Further empirical evidence from Ptuning-v2 demonstrates that prefix tuning achieves comparable performance to finetuning across different scales and tasks.
 
 ### 5 OPEN-SOURCE TOOLS
 TABLE 5: Overview of open-source efforts and tools development
@@ -168,17 +237,4 @@ TABLE 16. ChatGPT Alternatives on Different Applications
 | Botsonic AI chatbot      | GPT-4                        | https://writesonic.com/botsonic         |
 | ChatPDF                  | ChatGPT                      | https://www.chatpdf.com                |
 
-
-##  Overview of Datasets for Large Language Models
-| Corpora                      | Size       | Latest updated time | Link                                                                |
-|------------------------------|------------|---------------------|---------------------------------------------------------------------|
-| BoolQ                        | 15,492     | 2019                | https://github.com/google-research-datasets/boolean-questions |
-| Hellaswag                    | ~70k  | 2019                | https://allenai.org/data/hellaswag                            |
-| WinoGrande                   | ~44k  | 2019                | https://winogrande.allenai.org                               |
-| PIQA                         | ~21k  | 2020                | https://yonatanbisk.com/piqa                                 |
-| ARC                          | 7,787      | 2018                | https://allenai.org/data/arc                                  |
-| OpenbookQA                   | 5,957      | 2018                | https://allenai.org/data/open-book-qa                         |
-| RACE                         | $\sim$100k | 2017                | https://www.cs.cmu.edu/~glai1/data/race                      |
-| DROP                         | $\sim$96k  | 2019                | https://allenai.org/data/drop                                 |
-| GSM8K                        | 8,500      | 2021                | https://github.com/openai/grade-school-math                   |
-| MMLU\cite{hendryckstest2021} | 15,908     | 2021                | https://github.com/hendrycks/test      
+    
