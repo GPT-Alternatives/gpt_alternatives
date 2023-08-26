@@ -4,8 +4,6 @@
 The advent of generative pre-trained transformer (GPT) models has brought about a significant transformation in the field of natural language processing (NLP). These models, based on the transformer architecture, demonstrate exceptional capabilities in various NLP tasks. The continuous development of GPT models has led to increasingly larger and more sophisticated versions, with large GPT models like GPT-4 gaining significant attention for their unparalleled performance. However, despite their impressive capabilities, large GPT models have inherent limitations that restrict their widespread adoption, usability, and fine-tuning. The overview of the content is shown is Figure 1.
 ![Figure 1: Overview of out content](image/overview.png)
 
-**Related papers for this section**
-1. Attention is all you need. Neurips 2017. [[paper](https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html)]
 
 ## 2 GPT AND GPT-LIKE MODELS
 
