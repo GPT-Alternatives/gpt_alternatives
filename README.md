@@ -40,7 +40,7 @@ Table 1. Statistical overview of open large language models in recent years, cat
 | Openchatkit                           | 7B                                                              | Pythia             | 2023-03          | the OIG(https://laion.ai/blog/oig-dataset/) dataset                                                                    |                           |
 | BELLE-7B                              | 7B                                                              | Pythia             | 2023-03          | a Chinese Dataset(https://github.com/LianjiaTech/BELLE/tree/main/data/1.5M)                                            | 1.5M                      |
 | StableLM-Alpha                        | 3B, 7B                                                          | Base Model         | 2023-04          | dataset that build on the Pile                                                                                                        | 1.5T tokens               |
-| StableLM-Tuned-Alpha                  | 7B                                                              | StableLM           | 2023-04          | Stanford's Alpaca, Nomic-AI's gpt4all, RyokoAI's ShareGPT-52K datasets \cite{sharegpt52K}, Databricks labs' Dolly, and Anthropic's HH | -                         |
+| StableLM-Tuned-Alpha                  | 7B                                                              | StableLM           | 2023-04          | Stanford's Alpaca, Nomic-AI's gpt4all, RyokoAI's ShareGPT-52K datasets, Databricks labs' Dolly, and Anthropic's HH | -                         |
 | RWKV                                  | 169M, 430M, 1.5B, 3B, 7B, 14B                                   | Base Model         | -                | the Pile                                                                                                                              | 825GB                     |
 | ChatRWKV                              | 7B, 14B                                                         | RWKV               | 2022-12          | -                                                                                                                                     | -                         |
 | moss-moon-003-base                    | 16B                                                             | base model         | 2023-04          | -                                                                                                                                     | 700B tokens               |
@@ -58,42 +58,42 @@ Table 1. Statistical overview of open large language models in recent years, cat
 | Qwen-Chat                             | 7B                                                              | Qwen               | 2023-08          | -                                                                                                                                     | -                         |
 
 **Related papers/links for open LLMs**
-1. Exploring the limits of transfer learning with a unified text-to-text transfor. JMLR 2020. [[paper](https://arxiv.org/abs/1910.10683)]
-2. mT5: A massively multilingual pre-trained text-to-text transformer. NAACL 2021. [[paper](https://aclanthology.org/2021.naacl-main.41/)]
-3. GPT-Neo: Large Scale Autoregressive Language Modeling with Mesh-Tensorflow. [[link](https://zenodo.org/record/5297715)]
-4. Gpt-neox-20b: An open-source autoregressive language model. arxiv 2022. [[paper](https://arxiv.org/abs/2204.06745)]
-5. GPT-J-6B: A 6 Billion Parameter Autoregressive Language Model. [[link](https://github.com/kingoflolz/mesh-transformer-jax)]
-6. Opt: Open pre-trained transformer language models. arxiv 2022. [[paper](https://arxiv.org/abs/2205.01068)]
-7. BLOOM: A 176b-parameter open-access multilingual language model. arxiv 2022. [[paper](https://arxiv.org/abs/2211.05100)]
-8. Glm: General language model pretraining with autoregressive blank infilling. ACL 2022. [[paper](https://arxiv.org/abs/2103.10360)]
-9. GLM-130B: An Open Bilingual Pre-trained Model. ICLR 2023. [[paper](https://openreview.net/forum?id=-Aw0rrrPUF)]
+1. Exploring the limits of transfer learning with a unified text-to-text transfor. JMLR 2020. [[paper](https://arxiv.org/abs/1910.10683)] [[code & models](https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/t5)]
+2. mT5: A massively multilingual pre-trained text-to-text transformer. NAACL 2021. [[paper](https://aclanthology.org/2021.naacl-main.41/)] [[code & models](https://github.com/google-research/multilingual-t5)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/mt5)]
+3. GPT-Neo: Large Scale Autoregressive Language Modeling with Mesh-Tensorflow. [[code & models](https://github.com/EleutherAI/gpt-neo)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/gpt_neo)]
+4. Gpt-neox-20b: An open-source autoregressive language model. arxiv 2022. [[paper](https://arxiv.org/abs/2204.06745)] [[code](https://github.com/EleutherAI/gpt-neox)] [[original models](https://github.com/EleutherAI/gpt-neox)] [[Huggingface models](https://huggingface.co/EleutherAI/gpt-neox-20b)]
+5. GPT-J-6B: A 6 Billion Parameter Autoregressive Language Model. [[code & models](https://github.com/kingoflolz/mesh-transformer-jax)] [[Huggingface models](https://huggingface.co/EleutherAI/gpt-j-6b)]
+6. Opt: Open pre-trained transformer language models. arxiv 2022. [[paper](https://arxiv.org/abs/2205.01068)] [[code](https://github.com/facebookresearch/metaseq)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/opt)]
+7. BLOOM: A 176b-parameter open-access multilingual language model. arxiv 2022. [[paper](https://arxiv.org/abs/2211.05100)] [[Huggingface models](https://huggingface.co/bigscience/bloom)]
+8. Glm: General language model pretraining with autoregressive blank infilling. ACL 2022. [[paper](https://arxiv.org/abs/2103.10360)] [[code & models](https://github.com/THUDM/GLM)] [[Huggingface models](https://huggingface.co/models?other=glm,thudm)]
+9. GLM-130B: An Open Bilingual Pre-trained Model. ICLR 2023. [[paper](https://openreview.net/forum?id=-Aw0rrrPUF)] [[code & models](https://github.com/THUDM/GLM-130B/tree/main)]
 10. GLM-130B: An Open Bilingual Pre-trained Model. ICLR 2023. [[paper](https://openreview.net/forum?id=-Aw0rrrPUF)]
-11. ChatGLM-6B [[link](https://github.com/THUDM/ChatGLM-6B)]
-12. ChatGLM2-6B [[link](https://github.com/THUDM/ChatGLM2-6B)]
-13. LLaMA: Open and Efficient Foundation Language Models. arxiv 2023. [[paper](https://arxiv.org/abs/2302.13971)]
-14. OpenLLaMA: An Open Reproduction of LLaMA. [[link](https://github.com/openlm-research/open_llama)]
-15. Stanford Alpaca: An Instruction-following LLaMA Model. [[link](https://github.com/tatsu-lab/stanford_alpaca)]
-16. Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality. [[link](https://lmsys.org/blog/2023-03-30-vicuna/)]
-17. StableLM: Stability AI Language Models. [[link](https://github.com/Stability-AI/StableLM)]
-18. Baize. [[link](https://github.com/project-baize/baize-chatbot)]
-19. Koala: A Dialogue Model for Academic Research. [[link](https://bair.berkeley.edu/blog/2023/04/03/koala/)]
-20. WizardLM: Empowering Large Pre-Trained Language Models to Follow Complex Instructions. [[link](https://github.com/nlpxucan/WizardLM)]
-21. Large-scale, Informative, and Diverse Multi-round Dialogue Data, and Models. [[link](https://github.com/thunlp/UltraChat)]
-22. YuLan-Chat: An Open-Source Bilingual Chatbot. [[link](https://github.com/RUC-GSAI/YuLan-Chat)]
-23. Pythia: Interpreting Transformers Across Time and Scale. arxiv 2023. [[paper](https://arxiv.org/abs/2304.01373)]
-24. Dolly. [[link](https://github.com/databrickslabs/dolly)]
-25. OpenChatKit. [[link](https://github.com/togethercomputer/OpenChatKit)]
-26. BELLE: Be Everyone's Large Language model Engine. [[link](https://github.com/LianjiaTech/BELLE)]
-27. RWKV. arxiv 2023. [[link](https://arxiv.org/abs/2305.13048)]
-28. MOSS. [[link](https://github.com/OpenLMLab/MOSS)]
-29. RedPajama-INCITE. [[link](https://together.ai/blog/redpajama-models-v1)]
-30. Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs. [[link](https://www.mosaicml.com/blog/mpt-7b)]
-31. Introducing Falcon LLM. [[link](https://falconllm.tii.ae/)]
-32. InternLM. [[link](https://github.com/InternLM/InternLM)]
-33. Baichuan-7B. [[link](https://github.com/baichuan-inc/Baichuan-7B)]
-34. Llama 2: Open Foundation and Fine-Tuned Chat Models. arxiv 2023. [[link](https://arxiv.org/abs/2307.09288)]
-35. Introducing Qwen-7B: Open foundation and human-aligned models. [[link](https://github.com/QwenLM/Qwen-7B/blob/main/tech_memo.md)]
-36. XVERSE-13B. [[link](https://github.com/xverse-ai/XVERSE-13B)]
+11. ChatGLM-6B [[code & models](https://github.com/THUDM/ChatGLM-6B)] [[Huggingface models](https://huggingface.co/THUDM/chatglm-6b)]
+12. ChatGLM2-6B [[code & models](https://github.com/THUDM/ChatGLM2-6B)] [[Huggingface models](https://huggingface.co/THUDM/chatglm2-6b)]
+13. LLaMA: Open and Efficient Foundation Language Models. arxiv 2023. [[paper](https://arxiv.org/abs/2302.13971)] [[code & models](https://github.com/facebookresearch/llama/tree/llama_v1)]
+14. OpenLLaMA: An Open Reproduction of LLaMA. [[code & models](https://github.com/openlm-research/open_llama)]
+15. Stanford Alpaca: An Instruction-following LLaMA Model. [[code & models](https://github.com/tatsu-lab/stanford_alpaca)]
+16. Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality. [[blog](https://lmsys.org/blog/2023-03-30-vicuna/)] [[code & models](https://github.com/lm-sys/FastChat)]
+17. StableLM: Stability AI Language Models. [[code & models](https://github.com/Stability-AI/StableLM)]
+18. Baize. [[code & models](https://github.com/project-baize/baize-chatbot)]
+19. Koala: A Dialogue Model for Academic Research. [[blog](https://bair.berkeley.edu/blog/2023/04/03/koala/)] [[code & models](https://github.com/young-geng/EasyLM/tree/main)]
+20. WizardLM: Empowering Large Pre-Trained Language Models to Follow Complex Instructions. [[code & models](https://github.com/nlpxucan/WizardLM)]
+21. Large-scale, Informative, and Diverse Multi-round Dialogue Data, and Models. [[code & models](https://github.com/thunlp/UltraChat)]
+22. YuLan-Chat: An Open-Source Bilingual Chatbot. [[code & models](https://github.com/RUC-GSAI/YuLan-Chat)]
+23. Pythia: Interpreting Transformers Across Time and Scale. arxiv 2023. [[paper](https://arxiv.org/abs/2304.01373)] [[code & models](https://github.com/EleutherAI/pythia)]
+24. Dolly. [[code & models](https://github.com/databrickslabs/dolly)]
+25. OpenChatKit. [[code & models](https://github.com/togethercomputer/OpenChatKit)]
+26. BELLE: Be Everyone's Large Language model Engine. [[code & models](https://github.com/LianjiaTech/BELLE)]
+27. RWKV. arxiv 2023. [[paper](https://arxiv.org/abs/2305.13048)] [[code & models](https://github.com/BlinkDL/RWKV-LM)] [[Huggingface models](https://huggingface.co/BlinkDL)]
+28. MOSS. [[code & models](https://github.com/OpenLMLab/MOSS)]
+29. RedPajama-INCITE. [[blog](https://together.ai/blog/redpajama-models-v1)] [[Huggingface models](https://huggingface.co/togethercomputer)]
+30. Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs. [[blog](https://www.mosaicml.com/blog/mpt-7b)] [[code](https://github.com/mosaicml/llm-foundry)] [[Huggingface models](https://huggingface.co/mosaicml)] 
+31. Introducing Falcon LLM. [[blog](https://falconllm.tii.ae/)] [[Huggingface models](https://huggingface.co/tiiuae)]
+32. InternLM. [[code & models](https://github.com/InternLM/InternLM)]
+33. Baichuan-7B. [[code & models](https://github.com/baichuan-inc/Baichuan-7B)]
+34. Llama 2: Open Foundation and Fine-Tuned Chat Models. arxiv 2023. [[paper](https://arxiv.org/abs/2307.09288)] [[code & models](https://github.com/facebookresearch/llama/tree/main)]
+35. Introducing Qwen-7B: Open foundation and human-aligned models. [code & models](https://github.com/QwenLM/Qwen-7B/tree/main)]
+36. XVERSE-13B. [[code & models](https://github.com/xverse-ai/XVERSE-13B)]
 
 ## 3 PRE-TRAINING AND FINE-TUNING DA
 
@@ -105,7 +105,7 @@ Table 1. Statistical overview of open large language models in recent years, cat
 #### Rule-based Filtering ####
 * **Gopher** uses simple heuristic filters to remove low-quality text based on word count, word lengths, symbol-to-word ratios, bullet points, and ellipses. They ensure data quality by filtering out documents lacking essential English words and removing exact and near-duplicate documents.
 * **BLOOM** aimed to identify high-quality text written by humans for humans, excluding non-natural language content like preprocessing errors, SEO pages, or spam. It defined a set of quality indicators individually tailored for each language, with parameters and thresholds chosen by fluent speakers. Additionally, the authors manually reviewed each source to identify the indicators best suited to detect non-natural language, and visualization tools supported these processes.
-* **Falcon LLM** is a language model pretrained on the RefinedWeb Dataset \cite{DBLP:journals/corr/abs-2306-01116}, an English web-only pretraining dataset containing five trillion tokens. The authors claimed that by using properly filtered and deduplicated web data, Falcon LLM achieves impressive performance, even surpassing state-of-the-art models trained on The Pile. The filtering process involves both document-wise and line-wise procedures, using heuristics to detect and eliminate excessive repetitions and non-natural language content.
+* **Falcon LLM** is a language model pretrained on the RefinedWeb Dataset, an English web-only pretraining dataset containing five trillion tokens. The authors claimed that by using properly filtered and deduplicated web data, Falcon LLM achieves impressive performance, even surpassing state-of-the-art models trained on The Pile. The filtering process involves both document-wise and line-wise procedures, using heuristics to detect and eliminate excessive repetitions and non-natural language content.
 
 ### 3.2 Fine-tuning / Instruction Data
 
@@ -129,7 +129,7 @@ Table 1. Statistical overview of open large language models in recent years, cat
 
 * **InstructGPT**. InstructGPT utilizes reinforcement learning from human feedback (RLHF) to fine-tune GPT-3 based on human preferences. The data is labeled by a team of 40 contractors, collecting demonstrations of desired output behavior on prompts from the OpenAI API, generating approximately 33k samples for RLHF. A reward model (RM) is trained on human-labeled comparisons between model outputs, and the PPO algorithm is employed for fine-tuning, resulting in the aligned InstructGPT.
 
-* **GPT-4 Comparison Data**. The GPT-4 Comparison data consists of ratings provided by GPT-4 for its own responses on a scale from 1 to 10. Additionally, GPT-4 is tasked with comparing and rating responses from three models: GPT-4, GPT-3.5, and OPT-IML \cite{DBLP:journals/corr/abs-2212-12017}. These ratings serve as training data for reward models in the RLHF process.
+* **GPT-4 Comparison Data**. The GPT-4 Comparison data consists of ratings provided by GPT-4 for its own responses on a scale from 1 to 10. Additionally, GPT-4 is tasked with comparing and rating responses from three models: GPT-4, GPT-3.5, and OPT-IML. These ratings serve as training data for reward models in the RLHF process.
 
 
 **Supervised Fine-tuning**. Supervised fine-tuning for LLM alignment is also a powerful technique that enables the alignment of language models with specific instructional requirements through targeted data augmentation. By leveraging human-provided feedback and carefully curated datasets, this approach fine-tunes LLMs to better follow instructions and produce contextually relevant responses.
@@ -170,14 +170,31 @@ Another technique, **SmoothQuant**, proposes an accurate and efficient post-trai
 
 In addition to post-training quantization methods, **LLM-QAT** investigates quantization-aware training. It utilizes the pretrained full-precision model as a teacher model to generate training data for the quantized student model. The predictions of the pretrained full-precision model are utilized to distill knowledge into the quantized student model.
 
+**Related papers**
+1. ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers. arxiv 2022. [[paper](https://arxiv.org/abs/2206.01861)]
+2. LUT-GEMM: Quantized Matrix Multiplication based on LUTs for Efficient Inference in Large-Scale Generative Language Models. arxiv 2022. [[paper](https://arxiv.org/abs/2206.09557)]
+3. LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale. Neurips 2022. [[paper](https://arxiv.org/abs/2208.07339)]
+4. GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers. ICLR 2023. [[paper](https://arxiv.org/abs/2210.17323)]
+5. SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models. ICML 2023. [[paper](https://arxiv.org/abs/2211.10438)]
+6. LLM-QAT: Data-Free Quantization Aware Training for Large Language Models. arxiv 2023. [[paper](https://arxiv.org/abs/2305.17888)]
+
 #### 4.2 Efficient Finetuning
 The most common and straightforward way to adapt foundation models to downstream tasks is by finetuning downstream task data. However, finetuning the whole model parameters is still energy-consuming and requires a large GPU memory. Parameter-efficient finetuning aims to only finetune a small amount of the parameters while maintaining comparable performance to full parameter fine-tuning.
 
 **Adapter Tuning** is a technique in deep learning that allows for quicker and more efficient adaptation of pre-trained models to new tasks. The technique involves adding small, task-specific "adapter" modules (e.g. feedforward layers with skip-connections), which are lightweight neural networks that can be plugged into pre-trained models to fine-tune them for specific tasks. The weights of the adapters are then trained on the new task, while the weights of the pre-trained model are frozen. This allows for efficient transfer learning, as only a small number of parameters need to be updated.
 
-**Low-Rank Adaption (LoRA)**.LoRA freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the transformer architecture~\cite{hu2021lora}. More specifically, a pre-trained weight matrix $W_0 \in \mathbb{R}^{d \times k}$ is updated by a low-rank decomposition $W_0 + \Delta W = W_0 + BA$, where $B \in \mathbb{R}^{d\times m}, A \in \mathbb{R}^{m\times k}$, and $m\ll min(d, k)$. Only $A$ and $B$ are trainable parameters during finetuning. Recently, QLoRA~\cite{dettmers2023qlora} proposes to quantize
+**Low-Rank Adaption (LoRA)**.LoRA freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the transformer architecture. More specifically, a pre-trained weight matrix $W_0 \in \mathbb{R}^{d \times k}$ is updated by a low-rank decomposition $W_0 + \Delta W = W_0 + BA$, where $B \in \mathbb{R}^{d\times m}, A \in \mathbb{R}^{m\times k}$, and $m\ll min(d, k)$. Only $A$ and $B$ are trainable parameters during finetuning. Recently, QLoRA proposes to quantize
 a pretrained model to 4-bit and incorporates a limited number of learnable Low-rank Adapter weights. It significantly decreases the average memory needs for fine-tuning a 65-billion-parameter model from over 780GB of GPU memory to less than 48GB, while maintaining the runtime and predictive accuracy comparable to a fully finetuned 16-bit baseline.
 
+
+**Related papers**
+1. Parameter-Efficient Transfer Learning for NLP. ICML 2019. [[paper](http://proceedings.mlr.press/v97/houlsby19a/houlsby19a.pdf)]
+2. LoRA: Low-Rank Adaptation of Large Language Models. ICLR 2022. [[paper](https://openreview.net/forum?id=nZeVKeeFYf9)]
+3. The power of scale for parameter-efficient prompt tuning. EMNLP 2021. [[paper](https://aclanthology.org/2021.emnlp-main.243/)]
+4. GPT Understands, Too. arxiv 2021. [[paper](https://arxiv.org/abs/2103.10385)]
+5. Prefix-Tuning: Optimizing Continuous Prompts for Generation. ACL 2021. [[paper](https://aclanthology.org/2021.acl-long.353.pdf)]
+6. P-Tuning: Prompt Tuning Can Be Comparable to Fine-tuning Across Scales and Tasks. ACL 2022. [[paper](https://aclanthology.org/2022.acl-short.8/)]
+7. QLoRA: Efficient Finetuning of Quantized LLMs. arxiv 2023. [[paper](https://arxiv.org/pdf/2305.14314.pdf)]
 
 **Continuous Prompt Tuning and Prefix Tuning**. Continuous prompt tuning prepends or inserts learnable prompts to input sequence and freezes the pre-trained model weights. It is shown that continuous prompt tuning is comparable to finetuning on simple classification tasks with 10-billion-parameter models. Prefix tuning prepends prefixes to Transformer (more specifically, every Transformer layer has trainable continuous prompts rather than merely the input layer) and achieves comparable performance in table-to-text generation tasks compared with full parameter fine-tuning. Further empirical evidence from Ptuning-v2 demonstrates that prefix tuning achieves comparable performance to finetuning across different scales and tasks.
 
@@ -205,7 +222,7 @@ TABLE 5: Overview of open-source efforts and tools development
 | LAION AI               |       https://github.com/LAION-AI/Open-Assistant      |                                                                                       |                                 |                                                                          |
 | MetaGPT                | Software                                              | Multi-agent framework to tackle tasks with multiple agents                            |                                 |                                                                          |
 | Open-Source Community  |       https://github.com/geekan/MetaGPT               |                                                                                       |                                 |                                                                          |
-| {PEFT                  | Finetuning                                            | Library for finetuning LLMs with only part of parameters                              | Huggingface                     |       https://huggingface.co/docs/peft                                   |
+| PEFT                  | Finetuning                                            | Library for finetuning LLMs with only part of parameters                              | Huggingface                     |       https://huggingface.co/docs/peft                                   |
 
 ### 6 BENCHMARK EVALUATIONS
 Upcoming soon ...
