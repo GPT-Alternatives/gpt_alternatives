@@ -1,12 +1,14 @@
-# gpt_alternatives
+# A Survey on Language, Multimodal, and Scientific GPT Models: Examing User-Friendly and Open-Sourced Large GPT Models
 Continuously updating...
 
-## 1 INTRODUCTION
-The advent of generative pre-trained transformer (GPT) models has brought about a significant transformation in the field of natural language processing (NLP). These models, based on the transformer architecture, demonstrate exceptional capabilities in various NLP tasks. The continuous development of GPT models has led to increasingly larger and more sophisticated versions, with large GPT models like GPT-4 gaining significant attention for their unparalleled performance. However, despite their impressive capabilities, large GPT models have inherent limitations that restrict their widespread adoption, usability, and fine-tuning. The overview of the content is shown is Figure 1.
+The original paper is released on [arxiv](https://arxiv.org/pdf/2308.14149.pdf).
+
+## 1 Introduction
+The advent of generative pre-trained transformer (GPT) models has brought about a significant transformation in the field of natural language processing (NLP). These models, based on the transformer architecture, demonstrate exceptional capabilities in various NLP tasks. The continuous development of GPT models has led to increasingly larger and more sophisticated versions, with large GPT models like GPT-4 gaining significant attention for their unparalleled performance. However, despite their impressive capabilities, large GPT models have inherent limitations that restrict their widespread adoption, usability, and fine-tuning. The overview of the content is shown is Figure 1. 
 ![Figure 1: Overview of the content](image/overview.png)
 
 
-## 2 GPT AND GPT-LIKE MODELS
+## 2 GPT and GPT-like models
 
 ![Figure 2: Model Evolution](image/model_evolution.png)
 
@@ -114,7 +116,7 @@ Table 1. Statistical overview of open large language models in recent years, cat
 4. MolXPT: Wrapping Molecules with Text for Generative Pre-training. ACL 2023. [[paper](https://aclanthology.org/2023.acl-short.138/)] [[code & models](https://github.com/PharMolix/OpenBioMed)]
 5. Translation between Molecules and Natural Language. EMNLP 2022. [[paper](https://aclanthology.org/2022.emnlp-main.26/)] [[code & models](https://github.com/blender-nlp/MolT5)]
 
-## 3 PRE-TRAINING AND FINE-TUNING DA
+## 3 Pre-training and fine-tuning data
 
 ### 3.1 Pre-training Data
 #### Classifier-based Filtering ####
@@ -216,12 +218,12 @@ a pretrained model to 4-bit and incorporates a limited number of learnable Low-r
 6. P-Tuning: Prompt Tuning Can Be Comparable to Fine-tuning Across Scales and Tasks. ACL 2022. [[paper](https://aclanthology.org/2022.acl-short.8/)]
 7. QLoRA: Efficient Finetuning of Quantized LLMs. arxiv 2023. [[paper](https://arxiv.org/pdf/2305.14314.pdf)]
 
-### 5 OPEN-SOURCE TOOLS
+### 5 Open-sourced tools
 TABLE 5: Overview of open-source efforts and tools development
 | Tool                   | Category                                              | Application                                                                           | Released by                     | Link                                                                     |
 |------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------|--------------------------------------------------------------------------|
 | Transformers           | Deployment                                            | LLM training and deployment                                                           | Huggingface                     |       https://huggingface.co/transformers                                |
-| Colossal-AI           | Deployment             | Unified system to train and deploy large-scale models | HPC-AI Tech                                                                           |       https://colossalai.org/   |                                                                          |
+| Colossal-AI           | Deployment                                             | Unified system to train and deploy large-scale models | HPC-AI Tech                   | ColossalAi                      |       https://colossalai.org/                                            |
 | GPT4all                | Deployment                                            | Large and personalized language models training and deployment on common hardware     | Nomic AI                        |       https://gpt4all.io/                                                |
 | PandaLM                | Deployment                                            | System providing automated and reproducible comparisons among various LLMs            | Westlake University             |       https://github.com/WeOpenML/PandaLM                                |
 | MLC LLM                | Deployment                                            | Solution allowing LLMs to be deployed natively                                        | MLC AI                          |       https://mlc.ai/mlc-llm/                                            |
@@ -235,14 +237,15 @@ TABLE 5: Overview of open-source efforts and tools development
 | Scikit-LLM             | Framework                                             | Framework integrating LLMs into scikit-learn for enhanced text analysis tasks         | Tractive                        |       https://github.com/iryna-kondr/scikit-llm                          |
 | AlpacaFarm             | Framework                                             | Simulation framework for methods that learn from human feedback                       | Stanford                        |       https://github.com/tatsu-lab/alpaca_farm/                          |
 | h2oGPT                 | Framework                                             | LLM finetuning framework and chatbot UI with document(s) question-answer capabilities | H2O.ai                          |       https://github.com/h2oai/h2ogpt                                    |
-| Open-Assistant         | Software                                              | Customized and personalized chat-based assistant                                      |   LAION AI               |       https://github.com/LAION-AI/Open-Assistant      | 
-| MetaGPT                | Software                                              | Multi-agent framework to tackle tasks with multiple agents  | Open-Source Community  |       https://github.com/geekan/MetaGPT |
-| PEFT                  | Finetuning                                            | Library for finetuning LLMs with only part of parameters                              | Huggingface                     |       https://huggingface.co/docs/peft                                   |
+| Open-Assistant         | Software                                              | Customized and personalized chat-based assistant                                      |   LAION AI                      |       https://github.com/LAION-AI/Open-Assistant          
+               | 
+| MetaGPT                | Software                                              | Multi-agent framework to tackle tasks with multiple agents                            | Open-Source Community           |       https://github.com/geekan/MetaGPT |
+| PEFT                   | Finetuning                                            | Library for finetuning LLMs with only part of parameters                              | Huggingface                     |       https://huggingface.co/docs/peft                                   |
 
-### 6 BENCHMARK EVALUATIONS
+### 6 Benchmark evaluations
 Upcoming soon ...
 
-### MISC
+### Misc
 TABLE 16. ChatGPT Alternatives on Different Applications
 | **Software**             | **Backbone**                 | **Url**                                       |
 |--------------------------|------------------------------|-----------------------------------------------|
