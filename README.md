@@ -61,7 +61,7 @@ Table 1. Statistical overview of open large language models in recent years, cat
 
 **Related papers/links for open LLMs**
 *Language Domain*
-1. Exploring the limits of transfer learning with a unified text-to-text transfor. JMLR 2020. [[paper](https://arxiv.org/abs/1910.10683)] [[code & models](https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/t5)]
+1. Exploring the limits of transfer learning with a unified text-to-text transformer. JMLR 2020. [[paper](https://arxiv.org/abs/1910.10683)] [[code & models](https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/t5)]
 2. mT5: A massively multilingual pre-trained text-to-text transformer. NAACL 2021. [[paper](https://aclanthology.org/2021.naacl-main.41/)] [[code & models](https://github.com/google-research/multilingual-t5)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/mt5)]
 3. GPT-Neo: Large Scale Autoregressive Language Modeling with Mesh-Tensorflow. [[code & models](https://github.com/EleutherAI/gpt-neo)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/gpt_neo)]
 4. Gpt-neox-20b: An open-source autoregressive language model. arxiv 2022. [[paper](https://arxiv.org/abs/2204.06745)] [[code](https://github.com/EleutherAI/gpt-neox)] [[original models](https://github.com/EleutherAI/gpt-neox)] [[Huggingface models](https://huggingface.co/EleutherAI/gpt-neox-20b)]
@@ -173,7 +173,7 @@ Table 1. Statistical overview of open large language models in recent years, cat
 
 * **CodeExercises**. The CodeExercises dataset, extensively employed in the development of the powerful phi-1 model, constitutes a relatively compact yet valuable collection of Python exercises and solutions, comprising less than 180 million tokens. Each exercise represents a function that necessitates completion, presented in the form of a docstring. The primary focus of this dataset lies in aligning the phi-1 model's capabilities to excel at function completion tasks based on natural language instructions.
 
-### 4 DEPLOYMENT AND FINETUNING TECHNIQUE
+### 4 Deployment and fine-tuning technique
 #### 4.1 Efficient Deploy
 Most foundation models are typically trained in the FP16/BF16 format, which offers nearly twice the efficiency of FP32 training. However, they still demand a significant amount of GPU memory during deployment, making them unsuitable for certain low-resource scenarios.
 
@@ -223,7 +223,7 @@ TABLE 5: Overview of open-source efforts and tools development
 | Tool                   | Category                                              | Application                                                                           | Released by                     | Link                                                                     |
 |------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------|--------------------------------------------------------------------------|
 | Transformers           | Deployment                                            | LLM training and deployment                                                           | Huggingface                     |       https://huggingface.co/transformers                                |
-| Colossal-AI           | Deployment                                             | Unified system to train and deploy large-scale models | HPC-AI Tech                   | ColossalAi                      |       https://colossalai.org/                                            |
+| Colossal-AI           | Deployment                                             | Unified system to train and deploy large-scale models                                 | HPC-AI Tech                     |       https://colossalai.org/                                            |
 | GPT4all                | Deployment                                            | Large and personalized language models training and deployment on common hardware     | Nomic AI                        |       https://gpt4all.io/                                                |
 | PandaLM                | Deployment                                            | System providing automated and reproducible comparisons among various LLMs            | Westlake University             |       https://github.com/WeOpenML/PandaLM                                |
 | MLC LLM                | Deployment                                            | Solution allowing LLMs to be deployed natively                                        | MLC AI                          |       https://mlc.ai/mlc-llm/                                            |
