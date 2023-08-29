@@ -58,6 +58,7 @@ Table 1. Statistical overview of open large language models in recent years, cat
 | Qwen-Chat [[github](https://github.com/QwenLM/Qwen-7B/tree/main)]                            | 7B                                                              | Qwen               | 2023-08          | -                                                                                                                                     | -                         |
 
 **Related papers/links for open LLMs**
+*Language Domain*
 1. Exploring the limits of transfer learning with a unified text-to-text transfor. JMLR 2020. [[paper](https://arxiv.org/abs/1910.10683)] [[code & models](https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/t5)]
 2. mT5: A massively multilingual pre-trained text-to-text transformer. NAACL 2021. [[paper](https://aclanthology.org/2021.naacl-main.41/)] [[code & models](https://github.com/google-research/multilingual-t5)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/mt5)]
 3. GPT-Neo: Large Scale Autoregressive Language Modeling with Mesh-Tensorflow. [[code & models](https://github.com/EleutherAI/gpt-neo)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/gpt_neo)]
@@ -95,6 +96,23 @@ Table 1. Statistical overview of open large language models in recent years, cat
 35. Llama 2: Open Foundation and Fine-Tuned Chat Models. arxiv 2023. [[paper](https://arxiv.org/abs/2307.09288)] [[code & models](https://github.com/facebookresearch/llama/tree/main)]
 36. Introducing Qwen-7B: Open foundation and human-aligned models. [code & models](https://github.com/QwenLM/Qwen-7B/tree/main)]
 37. XVERSE-13B. [[code & models](https://github.com/xverse-ai/XVERSE-13B)]
+
+*Multimodal Domain*
+1. Flamingo: a Visual Language Model for Few-Shot Learning. NeurIPS 2022. [[paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/960a172bc7fbf0177ccccbb411a7d800-Paper-Conference.pdf)]
+2. BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models. arxiv 2023. [[paper](https://arxiv.org/pdf/2301.12597.pdf)] [[code](https://github.com/salesforce/LAVIS/tree/main/projects/blip2)]
+3. MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models. arxiv 2023. [[paper](https://arxiv.org/pdf/2304.10592.pdf)] [[website, code & models](https://minigpt-4.github.io/)]
+4. Visual Instruction Tuning. arxiv 2023. [[paper](https://arxiv.org/abs/2304.08485)] [[website, code & models](https://llava-vl.github.io/)]
+5. mPLUG-Owl: Modularization Empowers Large Language Models with Multimodality. arxiv 2023. [[paper](https://arxiv.org/abs/2304.14178)] [[code & models](https://github.com/X-PLUG/mPLUG-Owl)]
+6. Transfer Visual Prompt Generator across LLMs. arxiv 2023. [[paper](https://arxiv.org/pdf/2305.01278.pdf)] [[webste, code & models](https://vpgtrans.github.io/)]
+7. Otter: A Multi-Modal Model with In-Context Instruction Tuning. arxiv 2023. [[paper](https://arxiv.org/abs/2305.03726)] [[code & models](https://github.com/Luodian/Otter)]
+8. MultiModal-GPT: A Vision and Language Model for Dialogue with Humans. arxiv 2023. [[paper](https://arxiv.org/abs/2305.04790)] [[code & models](https://github.com/open-mmlab/Multimodal-GPT)]
+
+*Scientific Domain*
+1. BioGPT: Generative Pre-trained Transformer for Biomedical Text Generation and Mining. Bioinformatics 2022. [[paper](https://arxiv.org/abs/2210.10341)] [[code & models](https://github.com/microsoft/BioGPT)]
+2. Galactica: A Large Language Model for Science. arxiv 2022. [[paper](https://arxiv.org/abs/2211.09085)] [[models](https://github.com/paperswithcode/galai)]
+3. BiomedGPT: A Unified and Generalist Biomedical Generative Pre-trained Transformer for Vision, Language, and Multimodal Tasks. arxiv 2023. [[paper](https://arxiv.org/abs/2305.17100)] [[code & models](https://github.com/taokz/BiomedGPT)]
+4. MolXPT: Wrapping Molecules with Text for Generative Pre-training. ACL 2023. [[paper](https://aclanthology.org/2023.acl-short.138/)] [[code & models](https://github.com/PharMolix/OpenBioMed)]
+5. Translation between Molecules and Natural Language. EMNLP 2022. [[paper](https://aclanthology.org/2022.emnlp-main.26/)] [[code & models](https://github.com/blender-nlp/MolT5)]
 
 ## 3 PRE-TRAINING AND FINE-TUNING DA
 
