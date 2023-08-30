@@ -4,7 +4,16 @@ Continuously updating...
 The original paper is released on [arxiv](https://arxiv.org/pdf/2308.14149.pdf).
 
 ## 1 Introduction
-The advent of generative pre-trained transformer (GPT) models has brought about a significant transformation in the field of natural language processing (NLP). These models, based on the transformer architecture, demonstrate exceptional capabilities in various NLP tasks. The continuous development of GPT models has led to increasingly larger and more sophisticated versions, with large GPT models like GPT-4 gaining significant attention for their unparalleled performance. However, despite their impressive capabilities, large GPT models have inherent limitations that restrict their widespread adoption, usability, and fine-tuning. The overview of the content is shown is Figure 1. 
+The advent of generative pre-trained transformer (GPT) models has brought about a significant transformation in the field of natural language processing (NLP). These models, based on the transformer architecture, demonstrate exceptional capabilities in various NLP tasks. The continuous development of GPT models has led to increasingly larger and more sophisticated versions, with large GPT models like GPT-4 gaining significant attention for their unparalleled performance. However, despite their impressive capabilities, large GPT models have inherent limitations that restrict their widespread adoption, usability, and fine-tuning. 
+The need for user-friendly, relatively small, and open-sourced alternative GPT models arises from the desire to overcome these limitations while retaining high performance. In this survey paper, we provide an examination of alternative open-sourced models of large GPTs, focusing on user-friendly and relatively small models that facilitate easier deployment and accessibility. 
+* Investigate the architecture, design principles, and trade-offs of user-friendly and relatively small alternative GPT models, focusing on their ability to overcome the challenges posed by large GPT models. 
+* Present the data collection and analyze the pre-training data source, data quality, quantity, diversity, and finetuning data including instruction data, alignment data, and also the domain-specific data for domain-specific models. 
+* Survey the techniques for efficient deployment and fine-tuning of these GPT models. 
+* Introduce ongoing open-source projects and initiatives for user-friendly GPT model reproduction and deployment.
+* Provide a thorough analysis of benchmark evaluations and offer human evaluations of these relatively small GPT models to give nsome human-liked recommendations in real usage. 
+* Explore the extension of GPT models to multimodal settings, focusing on models that integrate NLP with computer vision, and also place special focus on user-friendly scientific GPT models and biomedical domains
+
+The overview of the content is shown in Figure 1. 
 ![Figure 1: Overview of the content](image/overview.png)
 
 
@@ -238,9 +247,8 @@ TABLE 5: Overview of open-source efforts and tools development
 | Scikit-LLM             | Framework                                             | Framework integrating LLMs into scikit-learn for enhanced text analysis tasks         | Tractive                        |       https://github.com/iryna-kondr/scikit-llm                          |
 | AlpacaFarm             | Framework                                             | Simulation framework for methods that learn from human feedback                       | Stanford                        |       https://github.com/tatsu-lab/alpaca_farm/                          |
 | h2oGPT                 | Framework                                             | LLM finetuning framework and chatbot UI with document(s) question-answer capabilities | H2O.ai                          |       https://github.com/h2oai/h2ogpt                                    |
-| Open-Assistant         | Software                                              | Customized and personalized chat-based assistant                                      |   LAION AI                      |       https://github.com/LAION-AI/Open-Assistant          
-               | 
-| MetaGPT                | Software                                              | Multi-agent framework to tackle tasks with multiple agents                            | Open-Source Community           |       https://github.com/geekan/MetaGPT |
+| Open-Assistant         | Software                                              | Customized and personalized chat-based assistant                                      |   LAION AI                      |       https://github.com/LAION-AI/Open-Assistant                         | 
+| MetaGPT                | Software                                              | Multi-agent framework to tackle tasks with multiple agents                            | Open-Source Community           |       https://github.com/geekan/MetaGPT                                  |
 | PEFT                   | Finetuning                                            | Library for finetuning LLMs with only part of parameters                              | Huggingface                     |       https://huggingface.co/docs/peft                                   |
 
 ### 6 Benchmark evaluations
@@ -273,7 +281,7 @@ TABLE 16. ChatGPT Alternatives on Different Applications
 
 
 ## Reference
-If you find our paper / repository useful, please kindly cite out paper.
+If you find our paper/repository useful, please kindly cite our paper.
 ```bibtex
 @misc{gao2023examining,
       title={Examining User-Friendly and Open-Sourced Large GPT Models: A Survey on Language, Multimodal, and Scientific GPT Models}, 
