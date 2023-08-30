@@ -3,25 +3,84 @@ Continuously updating...
 
 The original paper is released on [arxiv](https://arxiv.org/pdf/2308.14149.pdf).
 
-## 1 Introduction
+## 1. Introduction
 The advent of generative pre-trained transformer (GPT) models has brought about a significant transformation in the field of natural language processing (NLP). These models, based on the transformer architecture, demonstrate exceptional capabilities in various NLP tasks. The continuous development of GPT models has led to increasingly larger and more sophisticated versions, with large GPT models like GPT-4 gaining significant attention for their unparalleled performance. However, despite their impressive capabilities, large GPT models have inherent limitations that restrict their widespread adoption, usability, and fine-tuning. 
 The need for user-friendly, relatively small, and open-sourced alternative GPT models arises from the desire to overcome these limitations while retaining high performance. In this survey paper, we provide an examination of alternative open-sourced models of large GPTs, focusing on user-friendly and relatively small models that facilitate easier deployment and accessibility. 
-* Investigate the architecture, design principles, and trade-offs of user-friendly and relatively small alternative GPT models, focusing on their ability to overcome the challenges posed by large GPT models. 
-* Present the data collection and analyze the pre-training data source, data quality, quantity, diversity, and finetuning data including instruction data, alignment data, and also the domain-specific data for domain-specific models. 
-* Survey the techniques for efficient deployment and fine-tuning of these GPT models. 
-* Introduce ongoing open-source projects and initiatives for user-friendly GPT model reproduction and deployment.
-* Provide a thorough analysis of benchmark evaluations and offer human evaluations of these relatively small GPT models to give nsome human-liked recommendations in real usage. 
-* Explore the extension of GPT models to multimodal settings, focusing on models that integrate NLP with computer vision, and also place special focus on user-friendly scientific GPT models and biomedical domains
+1. Investigate the architecture, design principles, and trade-offs of user-friendly and relatively small alternative GPT models, focusing on their ability to overcome the challenges posed by large GPT models. 
+2. Present the data collection and analyze the pre-training data source, data quality, quantity, diversity, and finetuning data including instruction data, alignment data, and also the domain-specific data for domain-specific models. 
+3. Survey the techniques for efficient deployment and fine-tuning of these GPT models. 
+4. Introduce ongoing open-source projects and initiatives for user-friendly GPT model reproduction and deployment.
+5. Provide a thorough analysis of benchmark evaluations and offer human evaluations of these relatively small GPT models to give nsome human-liked recommendations in real usage. 
+6. Explore the extension of GPT models to multimodal settings, focusing on models that integrate NLP with computer vision, and also place special focus on user-friendly scientific GPT models and biomedical domains
 
 The overview of the content is shown in Figure 1. 
 ![Figure 1: Overview of the content](image/overview.png)
 
 
-## 2 GPT and GPT-like models
+## 2. GPT and GPT-like models
+
+**Related papers/links for open LLMs (List is updating)**
+
+***Language Domain***
+1. Exploring the limits of transfer learning with a unified text-to-text transformer. JMLR 2020. [[paper](https://arxiv.org/abs/1910.10683)] [[code & models](https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/t5)]
+2. mT5: A massively multilingual pre-trained text-to-text transformer. NAACL 2021. [[paper](https://aclanthology.org/2021.naacl-main.41/)] [[code & models](https://github.com/google-research/multilingual-t5)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/mt5)]
+3. GPT-Neo: Large Scale Autoregressive Language Modeling with Mesh-Tensorflow. [[code & models](https://github.com/EleutherAI/gpt-neo)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/gpt_neo)]
+4. Gpt-neox-20b: An open-source autoregressive language model. arxiv 2022. [[paper](https://arxiv.org/abs/2204.06745)] [[code](https://github.com/EleutherAI/gpt-neox)] [[original models](https://github.com/EleutherAI/gpt-neox)] [[Huggingface models](https://huggingface.co/EleutherAI/gpt-neox-20b)]
+5. GPT-J-6B: A 6 Billion Parameter Autoregressive Language Model. [[code & models](https://github.com/kingoflolz/mesh-transformer-jax)] [[Huggingface models](https://huggingface.co/EleutherAI/gpt-j-6b)]
+6. Opt: Open pre-trained transformer language models. arxiv 2022. [[paper](https://arxiv.org/abs/2205.01068)] [[code](https://github.com/facebookresearch/metaseq)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/opt)]
+7. BLOOM: A 176b-parameter open-access multilingual language model. arxiv 2022. [[paper](https://arxiv.org/abs/2211.05100)] [[Huggingface models](https://huggingface.co/bigscience/bloom)]
+8. Crosslingual Generalization through Multitask Finetuning. arxiv 2022. [[paper](https://arxiv.org/abs/2211.01786)] [[Huggingface models](https://huggingface.co/bigscience/bloomz)]
+9. Glm: General language model pretraining with autoregressive blank infilling. ACL 2022. [[paper](https://arxiv.org/abs/2103.10360)] [[code & models](https://github.com/THUDM/GLM)] [[Huggingface models](https://huggingface.co/models?other=glm,thudm)]
+10. GLM-130B: An Open Bilingual Pre-trained Model. ICLR 2023. [[paper](https://openreview.net/forum?id=-Aw0rrrPUF)] [[code & models](https://github.com/THUDM/GLM-130B/tree/main)]
+11. ChatGLM-6B [[code & models](https://github.com/THUDM/ChatGLM-6B)] [[Huggingface models](https://huggingface.co/THUDM/chatglm-6b)]
+12. ChatGLM2-6B [[code & models](https://github.com/THUDM/ChatGLM2-6B)] [[Huggingface models](https://huggingface.co/THUDM/chatglm2-6b)]
+13. LLaMA: Open and Efficient Foundation Language Models. arxiv 2023. [[paper](https://arxiv.org/abs/2302.13971)] [[code & models](https://github.com/facebookresearch/llama/tree/llama_v1)]
+14. OpenLLaMA: An Open Reproduction of LLaMA. [[code & models](https://github.com/openlm-research/open_llama)]
+15. Stanford Alpaca: An Instruction-following LLaMA Model. [[code & models](https://github.com/tatsu-lab/stanford_alpaca)]
+16. Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality. [[blog](https://lmsys.org/blog/2023-03-30-vicuna/)] [[code & models](https://github.com/lm-sys/FastChat)]
+17. StableLM: Stability AI Language Models. [[code & models](https://github.com/Stability-AI/StableLM)]
+18. Baize. [[code & models](https://github.com/project-baize/baize-chatbot)]
+19. Koala: A Dialogue Model for Academic Research. [[blog](https://bair.berkeley.edu/blog/2023/04/03/koala/)] [[code & models](https://github.com/young-geng/EasyLM/tree/main)]
+20. WizardLM: Empowering Large Pre-Trained Language Models to Follow Complex Instructions. [[code & models](https://github.com/nlpxucan/WizardLM)]
+21. Large-scale, Informative, and Diverse Multi-round Dialogue Data, and Models. [[code & models](https://github.com/thunlp/UltraChat)]
+22. YuLan-Chat: An Open-Source Bilingual Chatbot. [[code & models](https://github.com/RUC-GSAI/YuLan-Chat)]
+23. Pythia: Interpreting Transformers Across Time and Scale. arxiv 2023. [[paper](https://arxiv.org/abs/2304.01373)] [[code & models](https://github.com/EleutherAI/pythia)]
+24. Dolly. [[code & models](https://github.com/databrickslabs/dolly)]
+25. OpenChatKit. [[code & models](https://github.com/togethercomputer/OpenChatKit)]
+26. BELLE: Be Everyone's Large Language model Engine. [[code & models](https://github.com/LianjiaTech/BELLE)]
+27. RWKV: Reinventing RNNs for the Transformer Era. arxiv 2023. [[paper](https://arxiv.org/abs/2305.13048)] [[code & models](https://github.com/BlinkDL/RWKV-LM)] [[Huggingface models](https://huggingface.co/BlinkDL)]
+28. ChatRWKV. [[code & models](https://github.com/BlinkDL/ChatRWKV.git)]
+29. MOSS. [[code & models](https://github.com/OpenLMLab/MOSS)]
+30. RedPajama-INCITE. [[blog](https://together.ai/blog/redpajama-models-v1)] [[Huggingface models](https://huggingface.co/togethercomputer)]
+31. Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs. [[blog](https://www.mosaicml.com/blog/mpt-7b)] [[code](https://github.com/mosaicml/llm-foundry)] [[Huggingface models](https://huggingface.co/mosaicml)] 
+32. Introducing Falcon LLM. [[blog](https://falconllm.tii.ae/)] [[Huggingface models](https://huggingface.co/tiiuae)]
+33. InternLM. [[code & models](https://github.com/InternLM/InternLM)]
+34. Baichuan-7B. [[code & models](https://github.com/baichuan-inc/Baichuan-7B)]
+35. Llama 2: Open Foundation and Fine-Tuned Chat Models. arxiv 2023. [[paper](https://arxiv.org/abs/2307.09288)] [[code & models](https://github.com/facebookresearch/llama/tree/main)]
+36. Introducing Qwen-7B: Open foundation and human-aligned models. [code & models](https://github.com/QwenLM/Qwen-7B/tree/main)]
+37. XVERSE-13B. [[code & models](https://github.com/xverse-ai/XVERSE-13B)]
+
+***Multimodal Domain***
+1. Flamingo: a Visual Language Model for Few-Shot Learning. NeurIPS 2022. [[paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/960a172bc7fbf0177ccccbb411a7d800-Paper-Conference.pdf)]
+2. BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models. arxiv 2023. [[paper](https://arxiv.org/pdf/2301.12597.pdf)] [[code](https://github.com/salesforce/LAVIS/tree/main/projects/blip2)]
+3. MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models. arxiv 2023. [[paper](https://arxiv.org/pdf/2304.10592.pdf)] [[website, code & models](https://minigpt-4.github.io/)]
+4. Visual Instruction Tuning. arxiv 2023. [[paper](https://arxiv.org/abs/2304.08485)] [[website, code & models](https://llava-vl.github.io/)]
+5. mPLUG-Owl: Modularization Empowers Large Language Models with Multimodality. arxiv 2023. [[paper](https://arxiv.org/abs/2304.14178)] [[code & models](https://github.com/X-PLUG/mPLUG-Owl)]
+6. Transfer Visual Prompt Generator across LLMs. arxiv 2023. [[paper](https://arxiv.org/pdf/2305.01278.pdf)] [[webste, code & models](https://vpgtrans.github.io/)]
+7. Otter: A Multi-Modal Model with In-Context Instruction Tuning. arxiv 2023. [[paper](https://arxiv.org/abs/2305.03726)] [[code & models](https://github.com/Luodian/Otter)]
+8. MultiModal-GPT: A Vision and Language Model for Dialogue with Humans. arxiv 2023. [[paper](https://arxiv.org/abs/2305.04790)] [[code & models](https://github.com/open-mmlab/Multimodal-GPT)]
+
+***Scientific Domain***
+1. BioGPT: Generative Pre-trained Transformer for Biomedical Text Generation and Mining. Bioinformatics 2022. [[paper](https://arxiv.org/abs/2210.10341)] [[code & models](https://github.com/microsoft/BioGPT)]
+2. Galactica: A Large Language Model for Science. arxiv 2022. [[paper](https://arxiv.org/abs/2211.09085)] [[models](https://github.com/paperswithcode/galai)]
+3. BiomedGPT: A Unified and Generalist Biomedical Generative Pre-trained Transformer for Vision, Language, and Multimodal Tasks. arxiv 2023. [[paper](https://arxiv.org/abs/2305.17100)] [[code & models](https://github.com/taokz/BiomedGPT)]
+4. MolXPT: Wrapping Molecules with Text for Generative Pre-training. ACL 2023. [[paper](https://aclanthology.org/2023.acl-short.138/)] [[code & models](https://github.com/PharMolix/OpenBioMed)]
+5. Translation between Molecules and Natural Language. EMNLP 2022. [[paper](https://aclanthology.org/2022.emnlp-main.26/)] [[code & models](https://github.com/blender-nlp/MolT5)]
+
 
 ![Figure 2: Model Evolution](image/model_evolution.png)
 
-Table 1. Statistical overview of open large language models in recent years, categorized by base models
+**Table 1. Statistical overview of open large language models in recent years, categorized by base models**
 | **Model**                             | **#Param**                                                      | **Backbone**       | **Release Date** | **Training Data Source**                                                                                                              | **Training Data Size**    |
 |---------------------------------------|-----------------------------------------------------------------|--------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | T5  (enc-dec) [[github](https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints)]                        | 60M, 220M, 770M, 3B, 11B                                        | Base Model         | 2019-10          | C4                                                                                                                                    | 1T tokens                 |
@@ -68,65 +127,7 @@ Table 1. Statistical overview of open large language models in recent years, cat
 | Qwen [[github](https://github.com/QwenLM/Qwen-7B/tree/main)]                                 | 7B                                                              | Base Model         | 2023-08          | -                                                                                                                                     | 2.2T tokens               |
 | Qwen-Chat [[github](https://github.com/QwenLM/Qwen-7B/tree/main)]                            | 7B                                                              | Qwen               | 2023-08          | -                                                                                                                                     | -                         |
 
-**Related papers/links for open LLMs**
-
-*Language Domain*
-1. Exploring the limits of transfer learning with a unified text-to-text transformer. JMLR 2020. [[paper](https://arxiv.org/abs/1910.10683)] [[code & models](https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/t5)]
-2. mT5: A massively multilingual pre-trained text-to-text transformer. NAACL 2021. [[paper](https://aclanthology.org/2021.naacl-main.41/)] [[code & models](https://github.com/google-research/multilingual-t5)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/mt5)]
-3. GPT-Neo: Large Scale Autoregressive Language Modeling with Mesh-Tensorflow. [[code & models](https://github.com/EleutherAI/gpt-neo)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/gpt_neo)]
-4. Gpt-neox-20b: An open-source autoregressive language model. arxiv 2022. [[paper](https://arxiv.org/abs/2204.06745)] [[code](https://github.com/EleutherAI/gpt-neox)] [[original models](https://github.com/EleutherAI/gpt-neox)] [[Huggingface models](https://huggingface.co/EleutherAI/gpt-neox-20b)]
-5. GPT-J-6B: A 6 Billion Parameter Autoregressive Language Model. [[code & models](https://github.com/kingoflolz/mesh-transformer-jax)] [[Huggingface models](https://huggingface.co/EleutherAI/gpt-j-6b)]
-6. Opt: Open pre-trained transformer language models. arxiv 2022. [[paper](https://arxiv.org/abs/2205.01068)] [[code](https://github.com/facebookresearch/metaseq)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/opt)]
-7. BLOOM: A 176b-parameter open-access multilingual language model. arxiv 2022. [[paper](https://arxiv.org/abs/2211.05100)] [[Huggingface models](https://huggingface.co/bigscience/bloom)]
-8. Crosslingual Generalization through Multitask Finetuning. arxiv 2022. [[paper](https://arxiv.org/abs/2211.01786)] [[Huggingface models](https://huggingface.co/bigscience/bloomz)]
-9. Glm: General language model pretraining with autoregressive blank infilling. ACL 2022. [[paper](https://arxiv.org/abs/2103.10360)] [[code & models](https://github.com/THUDM/GLM)] [[Huggingface models](https://huggingface.co/models?other=glm,thudm)]
-10. GLM-130B: An Open Bilingual Pre-trained Model. ICLR 2023. [[paper](https://openreview.net/forum?id=-Aw0rrrPUF)] [[code & models](https://github.com/THUDM/GLM-130B/tree/main)]
-11. ChatGLM-6B [[code & models](https://github.com/THUDM/ChatGLM-6B)] [[Huggingface models](https://huggingface.co/THUDM/chatglm-6b)]
-12. ChatGLM2-6B [[code & models](https://github.com/THUDM/ChatGLM2-6B)] [[Huggingface models](https://huggingface.co/THUDM/chatglm2-6b)]
-13. LLaMA: Open and Efficient Foundation Language Models. arxiv 2023. [[paper](https://arxiv.org/abs/2302.13971)] [[code & models](https://github.com/facebookresearch/llama/tree/llama_v1)]
-14. OpenLLaMA: An Open Reproduction of LLaMA. [[code & models](https://github.com/openlm-research/open_llama)]
-15. Stanford Alpaca: An Instruction-following LLaMA Model. [[code & models](https://github.com/tatsu-lab/stanford_alpaca)]
-16. Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality. [[blog](https://lmsys.org/blog/2023-03-30-vicuna/)] [[code & models](https://github.com/lm-sys/FastChat)]
-17. StableLM: Stability AI Language Models. [[code & models](https://github.com/Stability-AI/StableLM)]
-18. Baize. [[code & models](https://github.com/project-baize/baize-chatbot)]
-19. Koala: A Dialogue Model for Academic Research. [[blog](https://bair.berkeley.edu/blog/2023/04/03/koala/)] [[code & models](https://github.com/young-geng/EasyLM/tree/main)]
-20. WizardLM: Empowering Large Pre-Trained Language Models to Follow Complex Instructions. [[code & models](https://github.com/nlpxucan/WizardLM)]
-21. Large-scale, Informative, and Diverse Multi-round Dialogue Data, and Models. [[code & models](https://github.com/thunlp/UltraChat)]
-22. YuLan-Chat: An Open-Source Bilingual Chatbot. [[code & models](https://github.com/RUC-GSAI/YuLan-Chat)]
-23. Pythia: Interpreting Transformers Across Time and Scale. arxiv 2023. [[paper](https://arxiv.org/abs/2304.01373)] [[code & models](https://github.com/EleutherAI/pythia)]
-24. Dolly. [[code & models](https://github.com/databrickslabs/dolly)]
-25. OpenChatKit. [[code & models](https://github.com/togethercomputer/OpenChatKit)]
-26. BELLE: Be Everyone's Large Language model Engine. [[code & models](https://github.com/LianjiaTech/BELLE)]
-27. RWKV: Reinventing RNNs for the Transformer Era. arxiv 2023. [[paper](https://arxiv.org/abs/2305.13048)] [[code & models](https://github.com/BlinkDL/RWKV-LM)] [[Huggingface models](https://huggingface.co/BlinkDL)]
-28. ChatRWKV. [[code & models](https://github.com/BlinkDL/ChatRWKV.git)]
-29. MOSS. [[code & models](https://github.com/OpenLMLab/MOSS)]
-30. RedPajama-INCITE. [[blog](https://together.ai/blog/redpajama-models-v1)] [[Huggingface models](https://huggingface.co/togethercomputer)]
-31. Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs. [[blog](https://www.mosaicml.com/blog/mpt-7b)] [[code](https://github.com/mosaicml/llm-foundry)] [[Huggingface models](https://huggingface.co/mosaicml)] 
-32. Introducing Falcon LLM. [[blog](https://falconllm.tii.ae/)] [[Huggingface models](https://huggingface.co/tiiuae)]
-33. InternLM. [[code & models](https://github.com/InternLM/InternLM)]
-34. Baichuan-7B. [[code & models](https://github.com/baichuan-inc/Baichuan-7B)]
-35. Llama 2: Open Foundation and Fine-Tuned Chat Models. arxiv 2023. [[paper](https://arxiv.org/abs/2307.09288)] [[code & models](https://github.com/facebookresearch/llama/tree/main)]
-36. Introducing Qwen-7B: Open foundation and human-aligned models. [code & models](https://github.com/QwenLM/Qwen-7B/tree/main)]
-37. XVERSE-13B. [[code & models](https://github.com/xverse-ai/XVERSE-13B)]
-
-*Multimodal Domain*
-1. Flamingo: a Visual Language Model for Few-Shot Learning. NeurIPS 2022. [[paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/960a172bc7fbf0177ccccbb411a7d800-Paper-Conference.pdf)]
-2. BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models. arxiv 2023. [[paper](https://arxiv.org/pdf/2301.12597.pdf)] [[code](https://github.com/salesforce/LAVIS/tree/main/projects/blip2)]
-3. MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models. arxiv 2023. [[paper](https://arxiv.org/pdf/2304.10592.pdf)] [[website, code & models](https://minigpt-4.github.io/)]
-4. Visual Instruction Tuning. arxiv 2023. [[paper](https://arxiv.org/abs/2304.08485)] [[website, code & models](https://llava-vl.github.io/)]
-5. mPLUG-Owl: Modularization Empowers Large Language Models with Multimodality. arxiv 2023. [[paper](https://arxiv.org/abs/2304.14178)] [[code & models](https://github.com/X-PLUG/mPLUG-Owl)]
-6. Transfer Visual Prompt Generator across LLMs. arxiv 2023. [[paper](https://arxiv.org/pdf/2305.01278.pdf)] [[webste, code & models](https://vpgtrans.github.io/)]
-7. Otter: A Multi-Modal Model with In-Context Instruction Tuning. arxiv 2023. [[paper](https://arxiv.org/abs/2305.03726)] [[code & models](https://github.com/Luodian/Otter)]
-8. MultiModal-GPT: A Vision and Language Model for Dialogue with Humans. arxiv 2023. [[paper](https://arxiv.org/abs/2305.04790)] [[code & models](https://github.com/open-mmlab/Multimodal-GPT)]
-
-*Scientific Domain*
-1. BioGPT: Generative Pre-trained Transformer for Biomedical Text Generation and Mining. Bioinformatics 2022. [[paper](https://arxiv.org/abs/2210.10341)] [[code & models](https://github.com/microsoft/BioGPT)]
-2. Galactica: A Large Language Model for Science. arxiv 2022. [[paper](https://arxiv.org/abs/2211.09085)] [[models](https://github.com/paperswithcode/galai)]
-3. BiomedGPT: A Unified and Generalist Biomedical Generative Pre-trained Transformer for Vision, Language, and Multimodal Tasks. arxiv 2023. [[paper](https://arxiv.org/abs/2305.17100)] [[code & models](https://github.com/taokz/BiomedGPT)]
-4. MolXPT: Wrapping Molecules with Text for Generative Pre-training. ACL 2023. [[paper](https://aclanthology.org/2023.acl-short.138/)] [[code & models](https://github.com/PharMolix/OpenBioMed)]
-5. Translation between Molecules and Natural Language. EMNLP 2022. [[paper](https://aclanthology.org/2022.emnlp-main.26/)] [[code & models](https://github.com/blender-nlp/MolT5)]
-
-## 3 Pre-training and fine-tuning data
+## 3. Pre-training and fine-tuning data
 
 ### 3.1 Pre-training Data
 #### Classifier-based Filtering ####
@@ -183,7 +184,7 @@ Table 1. Statistical overview of open large language models in recent years, cat
 
 * **CodeExercises**. The CodeExercises dataset, extensively employed in the development of the powerful phi-1 model, constitutes a relatively compact yet valuable collection of Python exercises and solutions, comprising less than 180 million tokens. Each exercise represents a function that necessitates completion, presented in the form of a docstring. The primary focus of this dataset lies in aligning the phi-1 model's capabilities to excel at function completion tasks based on natural language instructions.
 
-### 4 Deployment and fine-tuning technique
+### 4. Deployment and fine-tuning technique
 #### 4.1 Efficient Deploy
 Most foundation models are typically trained in the FP16/BF16 format, which offers nearly twice the efficiency of FP32 training. However, they still demand a significant amount of GPU memory during deployment, making them unsuitable for certain low-resource scenarios.
 
@@ -229,7 +230,7 @@ a pretrained model to 4-bit and incorporates a limited number of learnable Low-r
 7. QLoRA: Efficient Finetuning of Quantized LLMs. arxiv 2023. [[paper](https://arxiv.org/pdf/2305.14314.pdf)]
 
 ### 5 Open-sourced tools
-TABLE 5: Overview of open-source efforts and tools development
+**TABLE 5: Overview of open-source efforts and tools development**
 | Tool                   | Category                                              | Application                                                                           | Released by                     | Link                                                                     |
 |------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------|--------------------------------------------------------------------------|
 | Transformers           | Deployment                                            | LLM training and deployment                                                           | Huggingface                     |       https://huggingface.co/transformers                                |
@@ -251,33 +252,34 @@ TABLE 5: Overview of open-source efforts and tools development
 | MetaGPT                | Software                                              | Multi-agent framework to tackle tasks with multiple agents                            | Open-Source Community           |       https://github.com/geekan/MetaGPT                                  |
 | PEFT                   | Finetuning                                            | Library for finetuning LLMs with only part of parameters                              | Huggingface                     |       https://huggingface.co/docs/peft                                   |
 
-### 6 Benchmark evaluations
+### 6. Benchmark evaluations
 Upcoming soon ...
 
-### Misc
-TABLE 16. ChatGPT Alternatives on Different Applications
-| **Software**             | **Backbone**                 | **Url**                                       |
-|--------------------------|------------------------------|-----------------------------------------------|
-| ChatSonic                | GPT-4                        | https://writesonic.com/chat             |
-| Jasper Chat              | GPT 3.5 and others           | https://www.jasper.ai/chat              |
-| ChatSonic on Opera       | GPT-4                        | https://writesonic.com/chatsonic-opera  |
-| NeevaAI                  | ChatGPT                      | https://neeva.com/                      |
-| Copilot                  | Codex                        | https://github.com/features/copilot     |
-| Tabnine                  | GPT-2                        | https://www.tabnine.com/                |
-| Codewhisperer            | -                            | https://aws.amazon.com/cn/codewhisperer |
-| Elsa                     | -                            | https://elsaspeak.com/en                |
-| DeepL Write              | -                            | https://www.deepl.com/translator        |
-| Elicit                   | -                            | https://elicit.org                      |
-| Copilot in Azure Quantum | GPT-4                        | https://quantum.microsoft.com/          |
-| CoGram                   | -                            | https://www.cogram.com                  |
-| Otter                    | -                            | https://otter.ai                        |
-| Chatexcel                | -                            | https://chatexcel.com                  |
-| AI Anywhere              | ChatGPT, GPT-4               | https://www.ai-anywhere.com/#/dashboard |
-| Replika                  | A model with 774M parameters | https://replika.com                     |
-| Character AI             | GPT-4                        | https://beta.character.ai               |
-| Poe                      | -                            | https://poe.com                         |
-| Botsonic AI chatbot      | GPT-4                        | https://writesonic.com/botsonic         |
-| ChatPDF                  | ChatGPT                      | https://www.chatpdf.com                |
+### 7. Misc
+**TABLE 16. ChatGPT Alternatives on Different Applications**
+| **Field**             | **Software**             | **Backbone**                 | **Url**                                       |
+|-----------------------|--------------------------|------------------------------|-----------------------------------------------|
+|Writing                | ChatSonic                | GPT-4                        | https://writesonic.com/chat             |
+|                       | Jasper Chat              | GPT 3.5 and others           | https://www.jasper.ai/chat              |
+|Search Engines         | ChatSonic on Opera       | GPT-4                        | https://writesonic.com/chatsonic-opera  |
+|                       | NeevaAI                  | ChatGPT                      | https://neeva.com/                      |
+|Coding                 | Copilot                  | Codex                        | https://github.com/features/copilot     |
+|                       | Tabnine                  | GPT-2                        | https://www.tabnine.com/                |
+|                       | Codewhisperer            | -                            | https://aws.amazon.com/cn/codewhisperer |
+|Language Learning      | Elsa                     | -                            | https://elsaspeak.com/en                |
+|                       | DeepL Write              | -                            | https://www.deepl.com/translator        |
+|Research               | Elicit                   | -                            | https://elicit.org                      |
+|                       | ChatPDF                  | ChatGPT                      | https://www.chatpdf.com                 |
+|                       | Copilot in Azure Quantum | GPT-4                        | https://quantum.microsoft.com/          |
+|Productivity (team work)| CoGram                   | -                            | https://www.cogram.com                  |
+|                       | Otter                    | -                            | https://otter.ai                        |
+|                       | Chatexcel                | -                            | https://chatexcel.com                  |
+|                       | AI Anywhere              | ChatGPT, GPT-4               | https://www.ai-anywhere.com/#/dashboard |
+|Conversation           | Replika                  | A model with 774M parameters | https://replika.com                     |
+|                       | Character AI             | GPT-4                        | https://beta.character.ai               |
+|                       | Poe                      | Multiple Models (GPT-4, LLaMA, ...)     | https://poe.com                         |
+|Building customized AI | Botsonic AI chatbot      | GPT-4                        | https://writesonic.com/botsonic         |
+
 
 
 ## Reference
