@@ -60,6 +60,7 @@ Table 1. Statistical overview of open large language models in recent years, cat
 | Qwen-Chat [[github](https://github.com/QwenLM/Qwen-7B/tree/main)]                            | 7B                                                              | Qwen               | 2023-08          | -                                                                                                                                     | -                         |
 
 **Related papers/links for open LLMs**
+
 *Language Domain*
 1. Exploring the limits of transfer learning with a unified text-to-text transformer. JMLR 2020. [[paper](https://arxiv.org/abs/1910.10683)] [[code & models](https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/t5)]
 2. mT5: A massively multilingual pre-trained text-to-text transformer. NAACL 2021. [[paper](https://aclanthology.org/2021.naacl-main.41/)] [[code & models](https://github.com/google-research/multilingual-t5)] [[Huggingface models](https://huggingface.co/docs/transformers/model_doc/mt5)]
@@ -271,3 +272,15 @@ TABLE 16. ChatGPT Alternatives on Different Applications
 | ChatPDF                  | ChatGPT                      | https://www.chatpdf.com                |
 
 
+## Reference
+If you find our paper / repository useful, please kindly cite out paper.
+```bibtex
+@misc{gao2023examining,
+      title={Examining User-Friendly and Open-Sourced Large GPT Models: A Survey on Language, Multimodal, and Scientific GPT Models}, 
+      author={Kaiyuan Gao and Sunan He and Zhenyu He and Jiacheng Lin and QiZhi Pei and Jie Shao and Wei Zhang},
+      year={2023},
+      eprint={2308.14149},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
