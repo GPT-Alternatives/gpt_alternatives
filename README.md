@@ -186,6 +186,7 @@ The overview of the content is shown in Figure 1.
 
 ### 4. Deployment and fine-tuning technique
 #### 4.1 Efficient Deploy
+<!---
 Most foundation models are typically trained in the FP16/BF16 format, which offers nearly twice the efficiency of FP32 training. However, they still demand a significant amount of GPU memory during deployment, making them unsuitable for certain low-resource scenarios.
 
 Quantization refers to the process of minimizing the number of bits used to represent numerical values. This technique brings several advantages, including reduced model size, lower memory requirements, and diminished computational demands. Over the years, various strategies for quantizing large models have gained considerable traction. Here, we briefly introduce some of these techniques.
@@ -201,7 +202,7 @@ Compared to these approaches, **GPTQ** adopts a layer-wise quantization strategy
 Another technique, **SmoothQuant**, proposes an accurate and efficient post-training quantization method for large language models. By smoothing the outliers of activation values, it shifts the quantization difficulty from activations to weights, enabling 8-bit quantization of both weights and activations. As a result, it achieves high speed and reduced memory usage with almost no loss in accuracy.
 
 In addition to post-training quantization methods, **LLM-QAT** investigates quantization-aware training. It utilizes the pretrained full-precision model as a teacher model to generate training data for the quantized student model. The predictions of the pretrained full-precision model are utilized to distill knowledge into the quantized student model.
-
+-->
 ***Related papers***
 1. ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers. arxiv 2022. [[paper](https://arxiv.org/abs/2206.01861)]
 2. LUT-GEMM: Quantized Matrix Multiplication based on LUTs for Efficient Inference in Large-Scale Generative Language Models. arxiv 2022. [[paper](https://arxiv.org/abs/2206.09557)]
@@ -211,6 +212,7 @@ In addition to post-training quantization methods, **LLM-QAT** investigates quan
 6. LLM-QAT: Data-Free Quantization Aware Training for Large Language Models. arxiv 2023. [[paper](https://arxiv.org/abs/2305.17888)]
 
 #### 4.2 Efficient Finetuning
+<!---
 The most common and straightforward way to adapt foundation models to downstream tasks is by finetuning downstream task data. However, finetuning the whole model parameters is still energy-consuming and requires a large GPU memory. Parameter-efficient finetuning aims to only finetune a small amount of the parameters while maintaining comparable performance to full parameter fine-tuning.
 
 **Adapter Tuning** is a technique in deep learning that allows for quicker and more efficient adaptation of pre-trained models to new tasks. The technique involves adding small, task-specific "adapter" modules (e.g. feedforward layers with skip-connections), which are lightweight neural networks that can be plugged into pre-trained models to fine-tune them for specific tasks. The weights of the adapters are then trained on the new task, while the weights of the pre-trained model are frozen. This allows for efficient transfer learning, as only a small number of parameters need to be updated.
@@ -219,7 +221,7 @@ The most common and straightforward way to adapt foundation models to downstream
 a pretrained model to 4-bit and incorporates a limited number of learnable Low-rank Adapter weights. It significantly decreases the average memory needs for fine-tuning a 65-billion-parameter model from over 780GB of GPU memory to less than 48GB, while maintaining the runtime and predictive accuracy comparable to a fully finetuned 16-bit baseline.
 
 **Continuous Prompt Tuning and Prefix Tuning**. Continuous prompt tuning prepends or inserts learnable prompts to input sequence and freezes the pre-trained model weights. It is shown that continuous prompt tuning is comparable to finetuning on simple classification tasks with 10-billion-parameter models. Prefix tuning prepends prefixes to Transformer (more specifically, every Transformer layer has trainable continuous prompts rather than merely the input layer) and achieves comparable performance in table-to-text generation tasks compared with full parameter fine-tuning. Further empirical evidence from Ptuning-v2 demonstrates that prefix tuning achieves comparable performance to finetuning across different scales and tasks.
-
+-->
 ***Related papers***
 1. Parameter-Efficient Transfer Learning for NLP. ICML 2019. [[paper](http://proceedings.mlr.press/v97/houlsby19a/houlsby19a.pdf)]
 2. LoRA: Low-Rank Adaptation of Large Language Models. ICLR 2022. [[paper](https://openreview.net/forum?id=nZeVKeeFYf9)]
