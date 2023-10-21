@@ -1,5 +1,5 @@
 # A Survey on Language, Multimodal, and Scientific GPT Models: Examing User-Friendly and Open-Sourced Large GPT Models
-Continuously updating...
+Continuously updating
 
 The original paper is released on [arxiv](https://arxiv.org/pdf/2308.14149.pdf).
 
